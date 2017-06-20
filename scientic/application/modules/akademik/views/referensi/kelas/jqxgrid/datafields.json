@@ -1,0 +1,15 @@
+{
+	"table":"kelas",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "kelas"},
+		{ "name": "idtahunajaran"},
+		{ "name": "idjurusan"},
+		{ "name": "kapasitas"},
+		{ "name": "nipwali"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"},
+		{ "name": "idtingkat"}
+	],
+	"ID":"replid"
+}

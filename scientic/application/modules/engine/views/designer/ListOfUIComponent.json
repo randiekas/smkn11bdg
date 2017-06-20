@@ -1,0 +1,760 @@
+[{
+    icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+    label: 'Bootstrap',
+    expanded: false,
+    items: [{
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Grid',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Typography',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'code',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Code',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Tables',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Forms',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Buttons',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Images',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Icons',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Button Groups',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Button Dropdowns',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Button Dropups',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Input Groups',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Navs',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Navbar',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Breadcrumbs',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Pagination',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Labels',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Badges',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Jumbotron',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Thumbnails',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Alerts',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'progress-bars',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Media Object',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'List',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Panels',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Wells',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    }]
+},
+//list of ui widgets
+{
+    icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+    label: 'UI Widgets',
+    expanded: false,
+    items: [{
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'UI Widgets',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Grid',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Chart',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Gauge',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'DataTable',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'TreeGrid',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'TreeMap',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'BulletChart',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Ribbon',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Scheduler',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'DockingLayout',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Tabs',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Menu',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'NavigationBar',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Tree',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ListMenu',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ToolBar',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ComboBox',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'DropDownList',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Layout',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Popover',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ListBox',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Buttons',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Editor',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Input',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'MaskedInput',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'PasswordInput',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'NumberInput',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'FormattedInput',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'TextArea',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ComplexInput',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'DateTimeInput',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Calendar',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'FileUpload',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Rating',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ColorPicker',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ScrollView',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ProgressBar',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Loader',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Window',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Docking',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Tooltip',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Notification',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'NavBar',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'RangeSelector',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Slider',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ScroolBar',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'TagCloud',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Splitter',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'Splitter'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Panel',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'Panel'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Expander',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'Expander'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'DragDrop',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'DragDrop'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Adapter',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'Adapter'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Response',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'Validator',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    },
+    {
+        icon: '<?=base_url("assets/jqwidgets/")?>/images/folder.png',
+        label: 'ResponsivePanel',
+        expanded: false,
+        items: [{
+            icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+            label: 'jqx.base.css'
+        }]
+    }]
+
+
+}]

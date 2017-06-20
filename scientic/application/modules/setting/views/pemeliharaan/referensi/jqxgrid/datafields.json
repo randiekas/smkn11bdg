@@ -1,0 +1,12 @@
+{
+	"table":"referensi",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "ref_grup","type":"string"},
+		{ "name": "ref_kode","type":"string"},
+		{ "name": "ref_nama","type":"string"},
+		{ "name": "ref_ket","type":"string"},
+		{ "name": "na"}
+	],
+	"ID":"id"
+}

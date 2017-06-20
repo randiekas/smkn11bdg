@@ -1,0 +1,54 @@
+{
+  column1:function(){
+    var column = [
+      { text: "ID", datafield: "id", columntype:"textbox",width:"150"},
+      { text: "Sort", datafield: "sort_number", columntype:"textbox",width:"50"},
+      { text: "name", datafield: "name", columntype:"textbox",width:"250"},
+      { text: "url", datafield: "url", columntype:"textbox",width:"250"},
+      { text: "slug", datafield: "slug", columntype:"textbox",width:"250"},
+      { text: "folder", datafield: "folder", columntype:"textbox",width:"150"},
+      { text: "icon", datafield: "icon", columntype:"textbox",width:"150"},
+      { text: "na", datafield: "na", columntype:"textbox",width:"150"},
+      { text: "module_type", datafield: "module_type", columntype:"textbox",width:"150"},
+      ];
+      return column;
+  },
+  grid_setting:function(){
+    var setting = {
+      width: "99%",
+      height: "99%",
+      source: dataAdapter,
+      sortable: true,
+      pageable: true,
+      filterable: true,
+      sortable: true,
+      hierarchicalCheckboxes: true,
+      checkboxes: true,
+      columnsResize: true,
+      ready: function()
+      {
+          $("#treeGridUserLevelModule").jqxTreeGrid('expandRow', '2');
+      },
+      columns: module_setting.column1()
+    };
+    return setting;
+  },
+  pagesize:function(){
+    return 100;
+  },
+  module_url:function(){
+    return base_url()+'index.php/engine/Widget_jqxgrid';
+  },
+  urlDataGrid:function(){
+    return this.module_url()+"/grid_data/module/";
+  },
+  urlUpdateGrid:function(){
+    return this.module_url()+"/update/module/";
+  },
+  urlCreateGrid:function(){
+    return this.module_url()+"/store/module/";
+  },
+  urlDeleteGrid:function(){
+    return this.module_url()+"/destroy/module/";
+  }
+}

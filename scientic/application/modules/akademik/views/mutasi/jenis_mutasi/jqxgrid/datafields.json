@@ -1,0 +1,9 @@
+{
+	"table":"jenismutasi",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "jenismutasi"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

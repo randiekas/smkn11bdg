@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxresponse/index.htm?(arctic)#demos/jqxresponse/defaultfunctionality.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>jQuery Response Plugin</title>
+    <meta name="keywords" content="jQuery Response, JavaScript Response Plug-in, jqxResponse, Responsive Widget, Responsive Layouts, Responsive Design, Responsive Web Design,
+        Web Browser Detection, Browser Version Detection, Screen Size Detection, Browser Name Detection, jQWidgets Response Widget, jQWidgets, HTML5, JavaScript, Mobile Development,
+        Mobile Widgets">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./jQuery Response Plugin_files/jqx.base.css" media="screen">
+    <link rel="stylesheet" href="./jQuery Response Plugin_files/jqx.arctic.css" media="screen">
+    <link rel="stylesheet" href="./jQuery Response Plugin_files/jqx.apireference.css" media="screen">
+    <link rel="stylesheet" href="./jQuery Response Plugin_files/site.css" media="screen">
+    <script type="text/javascript" async="" src="./jQuery Response Plugin_files/ga.js"></script><script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-25803467-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body style="visibility: visible;">
+    <div id="pageTop" class="top">
+    <table style="table-layout: fixed; width: 1250px; height: 100%; margin: 0 auto;">
+    <tbody><tr style="height: 50px;">
+        <td align="left">
+            <a href="http://www.jqwidgets.com/">
+                <img style="margin: 0px; text-align: left; border: 0 none;" src="./jQuery Response Plugin_files/logo_bw.png" alt="jqWidgets"></a>
+        </td>
+        <td style="width: 572px" align="right">
+            <div id="navigationmenu" class="jqx-rc-all jqx-widget jqx-widget-demo jqx-menu jqx-menu-demo jqx-widget-header jqx-widget-header-demo jqx-menu-horizontal jqx-menu-horizontal-demo jqx-rc-all-demo" style="visibility: visible; height: auto; outline: none;" role="menubar" tabindex="0">
+                <ul style="opacity: 0.95;">
+                    <li style="margin-left: 8px; opacity: 0.95; float: left; padding-top: 6px; padding-bottom: 7px;" id="menuItem9907027686140500000" class="jqx-item jqx-item-demo jqx-menu-item-top jqx-menu-item-top-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/jquery-ui-widgets-toolkit" tabindex="-1">
+                        Intro</a></li>
+                    <li style="opacity: 0.95; float: left; padding-top: 6px; padding-bottom: 7px;" id="menuItem9909893220143858000" class="jqx-item jqx-item-demo jqx-menu-item-top jqx-menu-item-top-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/jquery-widgets-demo" tabindex="-1">Demo</a></li>
+                    <li style="opacity: 0.95; float: left; padding-top: 6px; padding-bottom: 7px;" id="menuItem9906121630382258000" class="jqx-item jqx-item-demo jqx-menu-item-top jqx-menu-item-top-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/download" tabindex="-1">Download</a></li>
+                    <li style="opacity: 0.95; float: left; padding-top: 6px; padding-bottom: 7px;" id="menuItem99037453004834240000" class="jqx-item jqx-item-demo jqx-menu-item-top jqx-menu-item-top-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/jquery-widgets-documentation" tabindex="-1">Documentation</a></li>
+                    <li style="opacity: 0.95; float: left; padding-top: 6px; padding-bottom: 7px;" id="menuItem9908898215934170000" class="jqx-item jqx-item-demo jqx-menu-item-top jqx-menu-item-top-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/license" tabindex="-1">License</a></li>
+                    <li style="opacity: 0.95; float: left; padding-top: 6px; padding-bottom: 7px;" id="menuItem99049063622090030000" class="jqx-item jqx-item-demo jqx-menu-item-top jqx-menu-item-top-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><span style="padding: 4px;">Community</span>
+                        
+                    </li>
+                    <li style="opacity: 0.95; float: left; padding-top: 6px; padding-bottom: 7px;" id="menuItem99031915170256980000" class="jqx-item jqx-item-demo jqx-menu-item-top jqx-menu-item-top-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><span style="padding: 4px;">About</span>
+                        
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</tbody></table>
+</div>
+    <div class="rc-all pageWrap">
+        <table class="rc-all navigatorOuterTable" id="demostable">
+            <tbody><tr valign="top">
+                <td>
+                    <table class="navigatorTable" cellspacing="0" cellpadding="0">
+                        <tbody><tr>
+                            <td colspan="2" valign="top" id="Td1" class="rc-all navigatorInnerContainer">
+                                <table class="navigatorInnerTable">
+                                    <tbody><tr>
+                                        <td colspan="2" valign="top">
+                                            <div class="topExpander">
+                                            </div>
+                                            <div id="widgetsNavigation" class="widgetsNavigation">
+                                            <div class="navigationHeader">
+    <ul class="navigationBar">
+        <li><a id="web" href="http://www.jqwidgets.com/jquery-widgets-demo/">Web Demos</a> <span style="margin-left: 30px;" class="navigationBarActive-overlay"></span><span style="margin-left: 30px;" class="navigationBarActive"></span></li>
+        <li><a href="http://www.jqwidgets.com/jquery-widgets-demo/mobiledemos/">Mobile Demos</a></li>
+        <li><a href="http://www.jqwidgets.com/themebuilder/">Theme Builder</a></li>
+    </ul>
+</div>
+<div class="navigationContainer">
+    <div class="topNavigation">
+        <table class="navigationTable" cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin-left: 0px; margin-top: 10px; width: 100%;">
+            <tbody><tr>
+                <td valign="top" align="left" colspan="6">
+                    <span class="navTableHeader">Web UI Widgets</span>
+                </td>
+                <td valign="top" align="left" colspan="1">
+                    <span class="navTableHeader">Integration</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-grid-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxgrid/index.htm">jqxGrid</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-tabs-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxtabs/index.htm">jqxTabs</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-listbox-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxlistbox/index.htm">jqxListBox</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-complexinput-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxcomplexinput/index.htm">jqxComplexInput</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-window-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxwindow/index.htm">jqxWindow</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-splitter-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxsplitter/index.htm">jqxSplitter</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-angularjs-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxangular/index.htm">AngularJS</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-chart-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxchart/index.htm">jqxChart</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-menu-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxmenu/index.htm">jqxMenu</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-buttons-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxbutton/index.htm">jqxButtons</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-datetimeinput-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxdatetimeinput/index.htm">jqxDateTimeInput</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-docking-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxdocking/index.htm">jqxDocking</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-panel-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxpanel/index.htm">jqxPanel</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-knockoutjs-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxknockout/index.htm">KnockoutJS</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-gauge-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxgauge/index.htm">jqxGauge</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-navigationbar-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxnavigationbar/index.htm">jqxNavigationBar</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-editor-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxeditor/index.htm">jqxEditor</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-calendar-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxcalendar/index.htm">jqxCalendar</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-tooltip-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxtooltip/index.htm">jqxTooltip</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-expander-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxexpander/index.htm">jqxExpander</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-bootstrap-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/twitter/index.htm">Bootstrap</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-datatable-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxdatatable/index.htm">jqxDataTable</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-tree-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxtree/index.htm">jqxTree</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-inputfield-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxinput/index.htm">jqxInput</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-fileupload-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxfileupload/index.htm">jqxFileUpload</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-notification-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxnotification/index.htm">jqxNotification</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-draw-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxDraw/index.htm">jqxDraw</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-requirejs-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/requirejs/index.htm">RequireJS</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-treegrid-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxtreegrid/index.htm">jqxTreeGrid</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-listmenu-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxlistmenu/index.htm">jqxListMenu</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-maskedinput-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxmaskedinput/index.htm">jqxMaskedInput</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-rating-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxrating/index.htm">jqxRating</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-navbar-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxnavbar/index.htm">jqxNavBar</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-dragdrop-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxdragdrop/index.htm">jqxDragDrop</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-jquerymobile-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jquerymobile/index.htm">jQuery Mobile</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-treemap-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxtreemap/index.htm">jqxTreeMap</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-toolbar-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxtoolbar/index.htm">jqxToolBar</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-passwordinput-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxpasswordinput/index.htm">jqxPasswordInput</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-colorpicker-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxcolorpicker/index.htm">jqxColorPicker</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-rangeselector-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxrangeselector/index.htm">jqxRangeSelector</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-dataadapter-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxdataadapter/index.htm">jqxDataAdapter</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-mvc-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/aspnetmvc/index.htm">ASP .NET MVC</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-bulletchart-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxbulletchart/index.htm">jqxBulletChart</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-combobox-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxcombobox/index.htm">jqxComboBox</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-numberinput-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxnumberinput/index.htm">jqxNumberInput</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-scrollview-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxscrollview/index.htm">jqxScrollView</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-slider-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxslider/index.htm">jqxSlider</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-response-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxresponse/index.htm">jqxResponse</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-php-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/php/index.htm">PHP</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-ribbon-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxribbon/index.htm">jqxRibbon</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-dropdownlist-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxdropdownlist/index.htm">jqxDropDownList</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-formattedinput-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxformattedinput/index.htm">jqxFormattedInput</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-progressbar-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxprogressbar/index.htm">jqxProgressBar</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-scrollbar-icon">
+                        </div>
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxscrollbar/index.htm">jqxScrollBar</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-validator-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxvalidator/index.htm">jqxValidator</a>
+                        </div>
+                    </div>
+                </td>
+                <td align="left">
+                    <div class="topNavigation-item">
+                        <div class="widget-icon jqx-java-icon">
+                        </div>
+
+                        <div>
+                            <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jsp/index.htm">JSP</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+            <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-scheduler-icon">
+                    </div>
+                    <div>
+                        <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxscheduler/index.htm">jqxScheduler</a>
+                    </div>
+                </div>
+            </td>                                         
+         <!--   <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-kanban-icon">
+                    </div>
+                    <div>
+                        <a href='../../demos/jqxkanban/index.htm'>jqxKanban</a>
+                    </div>
+                </div>
+            </td>-->
+<!--            <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-docklayout-icon">
+                    </div>
+                    <div>
+                        <a href='../../demos/jqxdockinglayout/index.htm'>jqxDockingLayout</a>
+                    </div>
+                </div>
+            </td>  -->                                       
+            <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-layout-icon">
+                    </div>
+
+                    <div>
+                        <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxlayout/index.htm">jqxLayout</a>
+                    </div>
+                </div>
+            </td>
+            <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-textarea-icon">
+                    </div>
+
+                    <div>
+                        <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxtextarea/index.htm">jqxTextArea</a>
+                    </div>
+                </div>
+            </td>                                          
+            <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-loader-icon">
+                    </div>
+                    <div>
+                        <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxloader/index.htm">jqxLoader</a>
+                    </div>
+                </div>
+            </td>
+            <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-tagcloud-icon">
+                    </div>
+                    <div>
+                        <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxtagcloud/index.htm">jqxTagCloud</a>
+                    </div>
+                </div>
+            </td>
+                <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-responsivepanel-icon">
+                    </div>
+
+                    <div>
+                        <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxresponsivepanel/index.htm">jqxResponsivePanel</a>
+                    </div>
+                </div>
+            </td>                                                           
+            <td align="left">
+                <div class="topNavigation-item">
+                                                     
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-docklayout-icon">
+                    </div>
+                    <div>
+                        <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxdockinglayout/index.htm">jqxDockingLayout</a>
+                    </div>
+                </div>
+            </td>  
+            <td align="left">
+                <div class="topNavigation-item">
+                    <div class="widget-icon jqx-popover-icon">
+                    </div>
+
+                    <div>
+                        <a href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxpopover/index.htm">jqxPopover</a>
+                    </div>
+                </div>
+            </td>                                          
+            <td align="left">
+                <div class="topNavigation-item">
+                </div>
+            </td>
+            <td align="left">
+                <div class="topNavigation-item">
+                </div>
+            </td>
+                <td align="left">
+                <div class="topNavigation-item">
+                </div>
+            </td>                                                           
+            <td align="left">
+                <div class="topNavigation-item">
+                                                     
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+</div>
+</div>
+                                        </td>
+                                    </tr>
+
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <table class="jqxDemoContainer">
+            <tbody><tr id="widgetsNavigationTree">
+                <td valign="top" align="left" class="navigation">
+                    <div id="navigationTitle" class="navigationTitle">
+                        <div style="float: left; margin-right: 4px;" class="widget-icon jqx-response-icon"></div>        
+                        <a>jqxResponse</a>
+                    </div>
+                    <div class="navigationItem">
+                        <ul class="navigationContent">
+                            <li class="navigationItemContent"><a id="demoLink" href="http://www.jqwidgets.com/jquery-widgets-demo/demos/jqxresponse/defaultfunctionality.htm">Default Functionality</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="Div11" class="navigationBottom">
+                    </div>
+                </td>
+                <td valign="top" id="demos" class="rc-all content">
+                    <table class="contentTable">
+                        <tbody><tr>
+                            <td id="samplesPath"><div class="examplePath" id="examplePath" style="float: left; margin-left: 0px;"><div id="pathElement"><span style="font-family: Verdana,Arial,sans-serif; font-size: 12px; margin-left: 2px; float: left;">demos/jqxresponse/defaultfunctionality.htm</span></div></div>
+<div style="display: block; float: right; visibility: hidden;" class="themeSelector" id="themeSelector">
+    <div style="font-size: 12px; font-family: Verdana,Arial,sans-serif; float: left;
+        margin-top: 4px;">
+        Theme:</div>
+    <div id="themeComboBox" style="margin-bottom: 3px; margin-left: 10px; float: left; width: 140px; height: 20px;" role="combobox" aria-autocomplete="both" aria-readonly="false" tabindex="0" class=" jqx-widget jqx-widget-arctic jqx-dropdownlist-state-normal jqx-dropdownlist-state-normal-arctic jqx-rc-all jqx-rc-all-arctic jqx-fill-state-normal jqx-fill-state-normal-arctic" aria-owns="listBoxthemeComboBox" aria-haspopup="true"><div style="background-color: transparent; -webkit-appearance: none; outline: none; width:100%; height: 100%; padding: 0px; margin: 0px; border: 0px; position: relative;"><div id="dropdownlistWrapperthemeComboBox" style="overflow: hidden; outline: none; background-color: transparent; border: none; float: left; width:100%; height: 100%; position: relative;"><div id="dropdownlistContentthemeComboBox" unselectable="on" style="outline: none; border: none; float: left; position: relative; margin-top: 2px; margin-bottom: 2px; width: 115px; height: 20px; left: 0px; top: 0px; background-color: transparent;" class="jqx-dropdownlist-content jqx-dropdownlist-content-arctic jqx-disableselect jqx-disableselect-arctic">Arctic</div><div id="dropdownlistArrowthemeComboBox" unselectable="on" style="border: none; float: right; position: relative; width: 19px; height: 20px; background-color: transparent;"><div unselectable="on" class="jqx-icon-arrow-down jqx-icon-arrow-down-arctic jqx-icon jqx-icon-arctic"></div></div></div></div><input type="hidden" value="arctic"></div>
+</div>
+</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="demoContainer" class="demoContainer">
+                                    <div id="divWelcome" class="welcomeContent" style="display: none;"></div>
+                                    <div id="tabs" class="demoTabs jqx-tabs jqx-tabs-jqxtabs jqx-widget jqx-widget-jqxtabs jqx-widget-content jqx-widget-content-jqxtabs jqx-rc-all jqx-rc-all-jqxtabs" style="width: auto; padding: 0px; margin: 0px; visibility: visible; display: block; height: 100%;" aria-disabled="false" role="tablist" hidefocus="true" aria-activedescendant="tab1" tabindex="0"><div class="jqx-tabs-headerWrapper jqx-tabs-header jqx-tabs-header-jqxtabs jqx-widget-header jqx-widget-header-jqxtabs jqx-rc-t jqx-rc-t-jqxtabs" style="outline: none; height: 31px; position: relative; left: 0px; top: 0px;"><ul style="margin-left: 30px; outline: none; white-space: nowrap; margin-top: 0px; margin-bottom: 0px; padding: 0px; border: none; text-indent: 0px; height: 31px; width: 916px; left: 0px; position: relative; top: 0px; background: transparent;" class="jqx-tabs-title-container jqx-tabs-title-container-jqxtabs">
+                                            <li id="tab1" role="tab" class="jqx-reset jqx-disableselect jqx-tabs-title jqx-tabs-title-jqxtabs jqx-item jqx-item-jqxtabs jqx-rc-t jqx-rc-t-jqxtabs jqx-tabs-title-selected-top jqx-tabs-title-selected-top-jqxtabs jqx-fill-state-pressed jqx-fill-state-pressed-jqxtabs" style="float: left; position: static; height: 16px;"><div class="jqx-tabs-titleWrapper" style="outline: none; position: relative; z-index: 15; height: 100%;"><div class="jqx-tabs-titleContentWrapper jqx-disableselect" style="float: left; margin-top: 0px;">Demo</div><div class="jqx-tabs-close-button jqx-tabs-close-button-jqxtabs" style="height: 16px; width: 16px; float: left; font-size: 1px; display: none; margin-top: 1px;"></div></div></li>
+                                            <li id="tab2" role="tab" class="jqx-reset jqx-disableselect jqx-tabs-title jqx-tabs-title-jqxtabs jqx-item jqx-item-jqxtabs jqx-rc-t jqx-rc-t-jqxtabs" style="float: left; position: static; height: 16px;"><div class="jqx-tabs-titleWrapper" style="outline: none; position: relative; z-index: 15; height: 100%;"><div class="jqx-tabs-titleContentWrapper jqx-disableselect" style="float: left; margin-top: 0px;">View Source</div><div class="jqx-tabs-close-button jqx-tabs-close-button-jqxtabs" style="height: 16px; width: 16px; float: left; font-size: 1px; display: none; margin-top: 1px;"></div></div></li>
+                                            <li id="tab3" role="tab" class="jqx-reset jqx-disableselect jqx-tabs-title jqx-tabs-title-jqxtabs jqx-item jqx-item-jqxtabs jqx-rc-t jqx-rc-t-jqxtabs" style="float: left; position: static; height: 16px;"><div class="jqx-tabs-titleWrapper" style="outline: none; position: relative; z-index: 15; height: 100%;"><div class="jqx-tabs-titleContentWrapper jqx-disableselect" style="float: left; margin-top: 0px;">API Reference</div><div class="jqx-tabs-close-button jqx-tabs-close-button-jqxtabs" style="height: 16px; width: 16px; float: left; font-size: 1px; display: none; margin-top: 1px;"></div></div></li>
+                                        </ul><div class="jqx-tabs-arrow-background jqx-tabs-arrow-background-jqxtabs jqx-widget-header jqx-widget-header-jqxtabs" style="width: 16px; height: 100%; z-index: 30; display: none; position: absolute; top: 0px; right: 16px;"><span style="display: block; width: 16px; height: 16px; margin-top: 9.5px;" class="jqx-tabs-arrow-left jqx-tabs-arrow-left-jqxtabs"></span></div><div class="jqx-tabs-arrow-background jqx-tabs-arrow-background-jqxtabs jqx-widget-header jqx-widget-header-jqxtabs" style="width: 16px; height: 100%; z-index: 30; display: none; position: absolute; top: 0px; right: 0px;"><span style="display: block; width: 16px; height: 16px; margin-top: 9.5px;" class="jqx-tabs-arrow-right jqx-tabs-arrow-right-jqxtabs"></span></div><div id="demourl" style="color: #444; position: absolute; font-size: 12px; font-family: Verdana,Arial,sans-serif; z-index: 999; text-align: left; top: 25%; left: 750px; margin-left: 25px; white-space: nowrap; margin-right: 10px;"><a class="demoLink" target="_blank" href="./jQuery Response Plugin_files/defaultfunctionality.html">View in new window</a></div></div>
+                                        
+                                        <div class="jqx-tabs-content jqx-tabs-content-jqxtabs jqx-widget-content jqx-widget-content-jqxtabs jqx-rc-b jqx-rc-b-jqxtabs" style="float: none; height: auto;"><div style="overflow: hidden; display: block; height: 1120px; width: 910px; margin-left: 20px;" id="tabs-1" role="tabpanel" class="jqx-tabs-content-element jqx-tabs-content-element-jqxtabs jqx-rc-b jqx-rc-b-jqxtabs">
+                                            <table border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <div id="divDescription"><div style="width: 800px; margin: 10px;">jqxResponse is a plug-in which provides information about the OS, Browser, View Port, Device Type and common features of the Device like Touch Support, Size, SVG, Canvas and VML support, etc. jqxResponse also enables you to trigger Window Resize and provides
+        cross-browser compatible triggering for Mouse and Touch events.
+    </div></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div style="overflow: hidden;" id="innerdemoContainer"><iframe frameborder="0" src="./jQuery Response Plugin_files/defaultfunctionality.html" id="jqxInnerdemoContainer" style="border-collapse: collapse; width: 900px; margin: 0px !important; padding: 0px !important; height: 1040px;" __idm_frm__="5"></iframe></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </div><div style="overflow: auto; display: none; height: 1120px; width: 910px;" id="tabs-2" role="tabpanel" class="jqx-tabs-content-element jqx-tabs-content-element-jqxtabs jqx-rc-b jqx-rc-b-jqxtabs"><pre style="width: 700px; max-width: 700px; margin: 5px;" class="code"><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;!DOCTYPE html&gt;</span><div></div><div></div><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;html lang=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"en"</span>&gt;</span><div></div><div></div><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;head&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;title id=<span style=" clear: both; padding: 0px; margin: 0px; color: #a24;">'Description'</span>&gt;</span>jqxResponse is a plug-in which provides information about the OS, Browser, View Port, Device Type and common features of the Device like Touch Support, Size, SVG, Canvas and VML support, etc. jqxResponse also enables you to trigger Window Resize and provides<div></div><div></div>        cross-browser compatible triggering for Mouse and Touch events.<div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/title&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;script src=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"../../scripts/jquery-1.11.1.min.js"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/script&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;script src=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"../../jqwidgets/jqxcore.js"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/script&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;script src=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"../../jqwidgets/jqxresponse.js"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/script&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;script&gt;</span><div></div><div></div>        $(function () {<div></div><div></div>            var response = new $.jqx.response();<div></div><div></div>          <div></div><div></div>            var displayInformation = function () {<div></div><div></div>                var os = response.os;<div></div><div></div>                var browser = response.browser;<div></div><div></div>                var device = response.device;<div></div><div></div>                var viewPort = response.viewPort;<div></div><div></div>                var documentInfo = response.document;<div></div><div></div><div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#os").html("OS: " + os.name + " "</span> + os.version);<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#osPlatform").html("Platform: "</span> + os.platform);<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#browser").html("Browser: " + browser.name + " " + browser.version + ", Access name: "</span> + browser.accessName);<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#device").html("Device Type: "</span> + device.type);<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#deviceSize").html("Device Width: " + device.width + ", Height: "</span> + device.height);<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#deviceAvailSize").html("Device AvailWidth: " + device.availWidth + ", AvailHeight: "</span> + device.availHeight);<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#deviceSupport").html("Supports Touch Events:" + device.touch + ", VML:" + browser.vml + ", SVG: " + browser.svg + ", Canvas:"</span> + browser.canvas);<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#viewPort").html("Viewport Width: " + viewPort.width + ", Height: "</span> + viewPort.height);<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#documentInfo").html("Document Width: " + documentInfo.width + ", Height: "</span> + documentInfo.height);<div></div><div></div>            }<div></div><div></div><div></div><div></div>            displayInformation();<div></div><div></div><div></div><div></div>            response.pointerDown($(document), function (event, position, pointerType) {<div></div><div></div>                // event is a <span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"touchstart" or "mousedown"</span> event object depending on whether the device is touch-enabled.<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#pointerInfoDown").html("Pointer Down: " + position.left + ", " + position.top + ", Type: "</span> + pointerType);<div></div><div></div>            });<div></div><div></div>            response.pointerUp($(document), function (event, position, pointerType) {<div></div><div></div>                // event is a <span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"touchend" or "mouseup"</span> event object depending on whether the device is touch-enabled.<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#pointerInfoUp").html("Pointer Up: " + position.left + ", " + position.top + ", Type: "</span> + pointerType);<div></div><div></div>            });<div></div><div></div>            response.pointerMove($(document), function (event, position, pointerType) {<div></div><div></div>                // event is a <span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"mousemove" or "touchmove"</span> event object depending on whether the device is touch-enabled.<div></div><div></div>                $(<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"#pointerInfoMove").html("Pointer Move: " + position.left + ", " + position.top + ", Type: "</span> + pointerType);<div></div><div></div>                if (device.touch) {<div></div><div></div>                    // stops the default action of the event. <div></div><div></div>                    event.preventDefault();<div></div><div></div>                    return false;<div></div><div></div>                }<div></div><div></div>            });<div></div><div></div><div></div><div></div>        });<div></div><div></div><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/script&gt;</span><div></div><div></div><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/head&gt;</span><div></div><div></div><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;body style=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"font-family: Verdana; font-size: 13px;"</span>&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"os"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"osPlatform"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span>    <div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"browser"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span>   <div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"device"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"deviceSize"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"deviceAvailSize"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"deviceSupport"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"viewPort"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"documentInfo"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"pointerInfoDown"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"pointerInfoMove"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div>    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;div id=<span style="clear: both; padding: 0px; margin: 0px; color: #a24;">"pointerInfoUp"</span>&gt;</span><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/div&gt;</span><div></div><div></div><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/body&gt;</span><div></div><div></div><span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/html&gt;</span><div></div><div></div><div></div></pre></div><div style="overflow: hidden; display: none; height: 1120px; width: 910px;" id="tabs-3" role="tabpanel" class="jqx-tabs-content-element jqx-tabs-content-element-jqxtabs jqx-rc-b jqx-rc-b-jqxtabs"><iframe frameborder="0" src="./jQuery Response Plugin_files/jqxresponse-api.html" id="widgetAPI" style="height: 1120px; border-collapse: collapse; width: 900px;" __idm_frm__="6"></iframe></div></div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <span class="copyright">Copyright © 2011-2015 jQWidgets. All rights reserved. <a title="Contact Us" target="_blank" href="http://jqwidgets.com/contact-us/">Contact
+                                                            Us</a> | <a target="_blank" title="Follow Us" href="http://jqwidgets.com/follow/">Follow
+                                                                Us</a> | <a target="_blank" title="Purchase" href="http://jqwidgets.com/license/">Purchase</a></span>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <div id="pageBottom" class="bottom">
+    <table style="width: 1250px; height: 100%; margin: 0 auto; color: #777777; font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px; line-height: 20px; background: #1c1e24">
+    <tbody><tr valign="top" style="height: 70px;">
+        <td align="left" style="width: 600px;">
+            <div>
+                <a style="color: #777777; text-decoration: underline;" title="Terms of Use" href="http://jqwidgets.com/terms-of-use">
+                    Terms of Use</a> | <a title="Privacy Policy" style="color: #777777; text-decoration: underline;" href="http://jqwidgets.com/privacy">Privacy Policy</a> | <a title="Follow Us" style="color: #777777;
+                            text-decoration: underline;" href="http://jqwidgets.com/follow">Follow Us</a>
+                | <a style="color: #777777; text-decoration: underline; margin-right: 5px;" title="Contact Us" href="http://jqwidgets.com/contact-us">Contact Us</a><a style="margin-left: 3px;
+                        padding-top: 3px;" href="http://www.facebook.com/pages/jQWidgets/282600545090250"><img width="20" height="20" style="border: 0 none; position: relative; top: 5px; margin-top: 3px;" alt="jQWidgets Facebook Fan Page" title="jQWidgets Facebook Fan Page" src="./jQuery Response Plugin_files/facebook_round.png"></a><a style="position: relative; left: 3px; top: 5px; padding-top: 3px;" href="http://twitter.com/#!/jqwidgets"><img style="border: 0 none;" width="20" height="20" alt="jQWidgets Updates on Twitter" title="jQWidgets Updates on Twitter" src="./jQuery Response Plugin_files/twitter_round.png"></a>
+             <a style="position: relative;
+                            left: 1px; top: 5px; padding-top: 3px;" href="https://plus.google.com/112258917836957242269/posts">
+                            <img style="border: 0 none;" width="20" height="20" alt="jQWidgets Updates on Twitter" title="jQWidgets Updates on Google Plus" src="./jQuery Response Plugin_files/googleplusicon_round.png"></a></div>
+            jQWidgets © 2011-2015. All Rights Reserved.
+            <br>
+            All product and company names herein are trademarks of their respective owners.
+        </td>
+    </tr>
+</tbody></table>
+</div>
+
+<script type="text/javascript" src="./jQuery Response Plugin_files/format.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/demos.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/demofunctions.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/jqxcore.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/jqxtabs.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/jqxbuttons.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/jqxscrollbar.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/jqxlistbox.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/jqxdropdownlist.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/jqxmenu.js"></script>
+<script type="text/javascript" src="./jQuery Response Plugin_files/jqxresponse.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        initDemo();
+        $("#themeSelector").css('visibility', 'hidden');
+    });
+</script>
+
+<div style="overflow: hidden; border: none; position: absolute; display: none; width: 165px; height: 225px; background-color: transparent;" id="listBoxthemeComboBox"><div id="innerListBoxthemeComboBox" class="jqx-listbox jqx-listbox-arctic jqx-reset jqx-reset-arctic jqx-rc-all jqx-rc-all-arctic jqx-widget jqx-widget-arctic jqx-widget-content jqx-widget-content-arctic jqx-disableselect jqx-popup jqx-popup-arctic" aria-multiselectable="false" role="listbox" style="width: 140px; height: 200px; position: absolute; z-index: 2147483647; top: 0px; left: 0px;"><div style="-webkit-appearance: none; background: transparent; outline: none; width:100%; height: 100%; align:left; border: 0px; padding: 0px; margin: 0px; left: 0px; top: 0px; valign:top; position: relative;"><div style="-webkit-appearance: none; border: none; background: transparent; outline: none; width:100%; height: 100%; padding: 0px; margin: 0px; align:left; left: 0px; top: 0px; valign:top; position: relative;"><div id="filterinnerListBoxthemeComboBox" style="display: none; visibility: inherit; align:left; valign:top; left: 0px; top: 0px; position: absolute;"><input style="position: absolute;" placeholder="Looking for" class="jqx-widget jqx-widget-arctic jqx-listbox-filter-input jqx-listbox-filter-input-arctic jqx-input jqx-input-arctic jqx-rc-all jqx-rc-all-arctic"></div><div id="listBoxContentinnerListBoxthemeComboBox" style="-webkit-appearance: none; outline: none; border: none; padding: 0px; overflow: hidden; margin: 0px; left: 0px; top: 0px; position: absolute; width: 121px; height: 181px; background: transparent;"></div><div id="verticalScrollBarinnerListBoxthemeComboBox" style="visibility: inherit; left: 121px; top: 0px; position: absolute; width: 15px; height: 181px;" class="jqx-scrollbar jqx-scrollbar-arctic jqx-widget jqx-widget-arctic jqx-widget-content jqx-widget-content-arctic jqx-rc-all jqx-rc-all-arctic"><div id="jqxScrollOuterWrapverticalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; width:100%; height: 100%; align:left; border: 0px; valign:top; position: relative;" class="jqx-reset jqx-reset-arctic"><div id="jqxScrollWrapverticalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; width: 17px; height: 100%; left: 0px; top: 0px; position: absolute;" class="jqx-reset jqx-reset-arctic jqx-scrollbar-state-normal jqx-scrollbar-state-normal-arctic"><div id="jqxScrollBtnUpverticalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 0px; top: 0px; position: absolute; width: 15px; height: 15px;" class="jqx-scrollbar-button-state-normal jqx-scrollbar-button-state-normal-arctic jqx-rc-t jqx-rc-t-arctic"><div class="jqx-reset jqx-reset-arctic jqx-icon-arrow-up jqx-icon-arrow-up-arctic"></div></div><div id="jqxScrollAreaUpverticalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 0px; top: 17px; position: absolute; height: 0px; width: 15px;" class="jqx-reset jqx-reset-arctic"></div><div id="jqxScrollThumbverticalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 0px; top: 17px; position: absolute; width: 15px; height: 16px; visibility: inherit;" class="jqx-scrollbar-thumb-state-normal jqx-scrollbar-thumb-state-normal-arctic jqx-fill-state-normal jqx-fill-state-normal-arctic jqx-rc-all jqx-rc-all-arctic"></div><div id="jqxScrollAreaDownverticalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 0px; top: 33px; position: absolute; height: 129px; width: 15px;" class="jqx-reset jqx-reset-arctic"></div><div id="jqxScrollBtnDownverticalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 0px; top: 164px; position: absolute; width: 15px; height: 15px;" class="jqx-scrollbar-button-state-normal jqx-scrollbar-button-state-normal-arctic jqx-rc-b jqx-rc-b-arctic"><div class="jqx-reset jqx-reset-arctic jqx-icon-arrow-down jqx-icon-arrow-down-arctic"></div></div></div></div></div><div id="horizontalScrollBarinnerListBoxthemeComboBox" style="visibility: inherit; left: 0px; top: 181px; position: absolute; height: 15px; width: 121px;" class="jqx-scrollbar jqx-scrollbar-arctic jqx-widget jqx-widget-arctic jqx-widget-content jqx-widget-content-arctic jqx-rc-all jqx-rc-all-arctic"><div id="jqxScrollOuterWraphorizontalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; width:100%; height: 100%; align:left; border: 0px; valign:top; position: relative;" class="jqx-reset jqx-reset-arctic"><div id="jqxScrollWraphorizontalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; width: 100%; height: 17px; left: 0px; top: 0px; position: absolute;" class="jqx-reset jqx-reset-arctic jqx-scrollbar-state-normal jqx-scrollbar-state-normal-arctic"><div id="jqxScrollBtnUphorizontalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 0px; top: 0px; position: absolute; width: 15px; height: 15px;" class="jqx-scrollbar-button-state-normal jqx-scrollbar-button-state-normal-arctic jqx-rc-l jqx-rc-l-arctic"><div class="jqx-reset jqx-reset-arctic jqx-icon-arrow-left jqx-icon-arrow-left-arctic"></div></div><div id="jqxScrollAreaUphorizontalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 17px; top: 0px; position: absolute; height: 15px;" class="jqx-reset jqx-reset-arctic"></div><div id="jqxScrollThumbhorizontalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 17px; top: 0px; position: absolute; width: 10px; height: 15px; visibility: inherit;" class="jqx-scrollbar-thumb-state-normal-horizontal jqx-scrollbar-thumb-state-normal-horizontal-arctic jqx-fill-state-normal jqx-fill-state-normal-arctic jqx-rc-all jqx-rc-all-arctic"></div><div id="jqxScrollAreaDownhorizontalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 27px; top: 0px; position: absolute; width: 75px; height: 15px;" class="jqx-reset jqx-reset-arctic"></div><div id="jqxScrollBtnDownhorizontalScrollBarinnerListBoxthemeComboBox" style="box-sizing: content-box; left: 104px; top: 0px; position: absolute; width: 15px; height: 15px;" class="jqx-scrollbar-button-state-normal jqx-scrollbar-button-state-normal-arctic jqx-rc-r jqx-rc-r-arctic"><div class="jqx-reset jqx-reset-arctic jqx-icon-arrow-right jqx-icon-arrow-right-arctic"></div></div></div></div></div><div id="bottomRightinnerListBoxthemeComboBox" style="left: 122px; top: 182px; border: none; position: absolute; visibility: inherit; width: 18px; height: 18px;" class="jqx-listbox-bottomright jqx-listbox-bottomright-arctic jqx-scrollbar-state-normal jqx-scrollbar-state-normal-arctic"></div></div></div></div></div><div class="jqx-menu-popup jqx-menu-popup jqx-menu-popup-demo" style="border: none; z-index: 17000; padding: 0px; margin: 0px; position: absolute; top: 0px; left: 0px; display: block; visibility: hidden; width: 159px; height: 118px; background-color: transparent;"><div style="background-color: transparent; border: none; position:absolute; overflow:hidden; left: 0; top: 0; right: 0; width: 100%; height: 100%;"><ul class="jqx-widget-content jqx-widget-content-demo jqx-menu-dropdown jqx-menu-dropdown-demo jqx-popup jqx-popup-demo jqx-rc-r jqx-rc-r-demo jqx-rc-b jqx-rc-b-demo" style="opacity: 0.95; overflow: hidden; position: absolute; left: 0px; display: inherit; top: -113px; margin-left: 0px; margin-right: 0px; padding-left: 2px; padding-right: 2px;" role="menu" id="jqxWidget52d784f0">
+                            <li style="opacity: 0.95;" id="menuItem9908356096541975000" class="jqx-item jqx-item-demo jqx-menu-item jqx-menu-item-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/community" tabindex="-1">Forums</a></li>
+                            <li style="opacity: 0.95;" id="menuItem990043428320437700000" class="jqx-item jqx-item-demo jqx-menu-item jqx-menu-item-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/Blog" tabindex="-1">Blogs</a></li>
+                            <li style="opacity: 0.95;" id="menuItem99020994145167070000" class="jqx-item jqx-item-demo jqx-menu-item jqx-menu-item-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/Follow" tabindex="-1">Follow Us</a></li>
+                            <li style="opacity: 0.95;" id="menuItem990057430905755700000" class="jqx-item jqx-item-demo jqx-menu-item jqx-menu-item-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a title="You need to be logged in to post in Forums" href="http://jqwidgets.com/wp-login.php" tabindex="-1">
+                                Client Login</a></li>
+                        </ul></div></div><div class="jqx-menu-popup jqx-menu-popup jqx-menu-popup-demo" style="border: none; z-index: 17001; padding: 0px; margin: 0px; position: absolute; top: 0px; left: 0px; display: block; visibility: hidden; width: 159px; height: 91px; background-color: transparent;"><div style="background-color: transparent; border: none; position:absolute; overflow:hidden; left: 0; top: 0; right: 0; width: 100%; height: 100%;"><ul class="jqx-widget-content jqx-widget-content-demo jqx-menu-dropdown jqx-menu-dropdown-demo jqx-popup jqx-popup-demo jqx-rc-r jqx-rc-r-demo jqx-rc-b jqx-rc-b-demo" style="opacity: 0.95; overflow: hidden; position: absolute; left: 0px; display: inherit; top: -86px; margin-left: 0px; margin-right: 0px; padding-left: 2px; padding-right: 2px;" role="menu" id="jqxWidget10f55dc0">
+                            <li style="opacity: 0.95;" id="menuItem99080143216624860" class="jqx-item jqx-item-demo jqx-menu-item jqx-menu-item-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/about" tabindex="-1">About Us</a></li>
+                            <li style="opacity: 0.95;" id="menuItem9907415490262210000" class="jqx-item jqx-item-demo jqx-menu-item jqx-menu-item-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/contact-us" tabindex="-1">Contact Us</a></li>
+                            <li style="opacity: 0.95;" id="menuItem990306241677608300" class="jqx-item jqx-item-demo jqx-menu-item jqx-menu-item-demo jqx-rc-all jqx-rc-all-demo" role="menuitem"><a href="http://www.jqwidgets.com/FAQ" tabindex="-1">FAQ</a></li>
+                        </ul></div></div></body></html>

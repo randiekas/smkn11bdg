@@ -1,0 +1,33 @@
+{
+  config:{
+      theme:themeWidget,
+       width : "99.80%",
+       height : "100%",
+       source: dataadapter,
+       autoheight: false,
+       pageable: false,
+       virtualmode: false,
+       showfilterrow: false,
+       filterable: true,
+       sortable: true,
+       columnsResize: true,
+       altrows: true,
+       showeverpresentrow: false,
+       everpresentrowposition: "top",
+       everpresentrowactions: "add reset",
+       editable:true,
+       editmode:"dblclick",
+       groupable: false,
+       everpresentrowposition:'top',
+	   //selectionmode:'multiplecellsadvanced',
+	   pagesizeoptions: <?=$this->load->view("mutasi/statistik_mutasi/jqxgrid/jqxgrid-function/pagesizeoptions.js",array(),TRUE)?>,
+       rendergridrows: <?=$this->load->view("mutasi/statistik_mutasi/jqxgrid/jqxgrid-function/rendergridrows.js",array(),TRUE)?>,
+       columns: <?=$this->load->view("mutasi/statistik_mutasi/jqxgrid/jqxgrid-function/columns.js",array(),TRUE)?>
+  },
+  pagesize:500,
+  urlDataGrid:current_url()+"/grid_data_statistik/",
+  urlUpdateGrid:current_url()+"/update_import/",
+  urlCreateGrid:current_url()+"/store_import/",
+  urlDeleteGrid:current_url()+"/destroy_import/",
+  element:"#jqxGrid"
+}

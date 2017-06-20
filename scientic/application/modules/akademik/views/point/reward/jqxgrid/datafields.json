@@ -1,0 +1,9 @@
+{
+	"table":"point_reward",
+	"fields":[
+		{ "name": "replid"},
+        { "name": "point"},
+        { "name": "reward"}
+	],
+	"ID":"replid"
+}

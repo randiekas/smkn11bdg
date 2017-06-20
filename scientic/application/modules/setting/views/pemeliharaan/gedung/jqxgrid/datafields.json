@@ -1,0 +1,11 @@
+{
+	"table":"gedung",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "kd_gedung"},
+		{ "name": "kd_upb"},
+		{ "name": "nama_gedung"},
+		{ "name": "lokasi"}
+	],
+	"ID":"id"
+}

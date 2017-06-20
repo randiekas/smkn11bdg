@@ -1,0 +1,13 @@
+{
+	"table":"jabatan",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "rootid"},
+		{ "name": "jabatan"},
+		{ "name": "singkatan"},
+		{ "name": "satker"},
+		{ "name": "eselon"},
+		{ "name": "isdefault"}
+	],
+	"ID":"replid"
+}

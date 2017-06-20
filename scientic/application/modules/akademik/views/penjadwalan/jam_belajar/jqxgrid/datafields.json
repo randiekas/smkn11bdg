@@ -1,0 +1,11 @@
+{
+	"table":"jam",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "jamke"},
+		{ "name": "departemen"},
+		{ "name": "jam1"},
+		{ "name": "jam2"}
+	],
+	"ID":"replid"
+}

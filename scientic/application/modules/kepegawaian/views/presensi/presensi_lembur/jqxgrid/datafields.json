@@ -1,0 +1,16 @@
+{
+	"table":"presensipegawai",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "nip"},
+		{ "name": "tanggal"},
+		{ "name": "jammasuk"},
+		{ "name": "jampulang"},
+		{ "name": "jamwaktukerja"},
+		{ "name": "menitwaktukerja"},
+		{ "name": "status"},
+		{ "name": "keterangan"},
+		{ "name": "source"}
+	],
+	"ID":"replid"
+}

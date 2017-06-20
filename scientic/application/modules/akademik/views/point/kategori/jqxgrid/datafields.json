@@ -1,0 +1,10 @@
+{
+	"table":"point_kategori",
+	"fields":[
+		{ "name": "replid"},
+        { "name": "kode"},
+        { "name": "kategori"},
+        { "name": "jenis"}
+	],
+	"ID":"replid"
+}

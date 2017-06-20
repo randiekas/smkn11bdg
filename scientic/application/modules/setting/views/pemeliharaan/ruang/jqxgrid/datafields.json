@@ -1,0 +1,14 @@
+{
+	"table":"ruangan",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "kd_gedung"},
+		{ "name": "kd_jenis_ruang"},
+		{ "name": "kd_ruangan"},
+		{ "name": "nama_ruangan"},
+		{ "name": "luas_ruang"},
+		{ "name": "kapasitas"},
+		{ "name": "max_sks_harian"}
+	],
+	"ID":"id"
+}

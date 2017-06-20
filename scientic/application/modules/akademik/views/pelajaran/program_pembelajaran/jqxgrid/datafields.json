@@ -1,0 +1,14 @@
+{
+	"table":"rpp",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "idtingkat"},
+		{ "name": "idsemester"},
+		{ "name": "idpelajaran"},
+		{ "name": "koderpp"},
+		{ "name": "rpp"},
+		{ "name": "deskripsi"},
+		{ "name": "aktif"}
+	],
+	"ID":"replid"
+}

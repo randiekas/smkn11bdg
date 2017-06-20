@@ -1,0 +1,13 @@
+{
+	"table":"tahunajaran",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "tahunajaran"},
+		{ "name": "departemen"},
+		{ "name": "tglmulai"},
+		{ "name": "tglakhir"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

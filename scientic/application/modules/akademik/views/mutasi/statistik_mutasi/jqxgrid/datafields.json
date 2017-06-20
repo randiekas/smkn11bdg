@@ -1,0 +1,10 @@
+{
+	"table":"v_statistik_mutasi",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "jenismutasi"},
+		{ "name": "keterangan"},
+		{ "name": "jumlah"}
+	],
+	"ID":"replid"
+}

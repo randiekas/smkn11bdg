@@ -1,0 +1,120 @@
+{
+  config:{
+      //Appearance
+      width : "99%",//favourites
+      height : "99%",//favourites
+      altrows: true,//favourites
+      altstart: 1,
+      altstep: 1,
+      autoshowloadelement: true,
+      autoshowfiltericon: true,
+      autoshowcolumnsmenubutton: true,
+      clipboard: true,
+      closeablegroups: true,
+      columnsmenuwidth: 15,
+      columnmenuopening: null,
+      columnmenuclosing: null,
+      cellhover: null,
+      enablekeyboarddelete: true,
+      enableellipsis: true,
+      enablemousewheel: true,
+      enableanimations: true,
+      enabletooltips: false,
+      enablehover: true,
+      enablebrowserselection: false,
+      everpresentrowposition: "top",
+      everpresentrowheight: 30,
+      everpresentrowactions: "add update reset delete",//favourites
+      everpresentrowactionsmode: "popup",
+      filterrowheight: 31,
+      filtermode: 'default',
+      groupsrenderer: null,
+      groupcolumnrenderer:null,
+      groupsexpandedbydefault:false,
+      handlekeyboardnavigation: null,
+      pagerrenderer: null,
+      rtl : false,
+      showdefaultloadelement:true,
+      showfiltercolumnbackground: true,
+      showfiltermenuitems: true,
+      showpinnedcolumnbackground: true,
+      showsortcolumnbackground: true,
+      showsortmenuitems: true,
+      showgroupmenuitems: true,
+      showrowdetailscolumn: true,
+      showheader: true,
+      showgroupsheader: true,
+      showaggregates: false,
+      showeverpresentrow: true,//favourites
+      showfilterrow: false,
+      showemptyrow: true,
+      showstatusbar: false,
+      statusbarheight: 34,
+      showtoolbar: false,
+      selectionmode: 'multiplerowsadvanced', //favourites
+      toolbarheight: 34,
+      //Layout
+      autoheight: false,
+      autorowheight:false,
+      columnsheight:25,
+      deferreddatafields:[],
+      groupsheaderheight:34,
+      groupindentwidth:20,
+      pagerheight:28,
+      rowsheight:25,
+      scrollbarsize:15,
+      scrollmode:"default",
+      //Behavior
+      autosavestate:false,
+      autoloadstate:false,
+      columns: [ //favourites
+          { text: "ID", datafield: "id", columntype:"textbox",width: "10%"},
+          { text: "No", datafield: "sort_number", columntype:"numberinput",width: "10%"},
+          { text: "Code", datafield: "code", columntype:"textbox",width: "30%" },
+          { text: "Name", datafield: "name", columntype:"textbox",width: "50%",draggable:"enables"}
+      ],
+      columnsmenu: true,
+      columnsResize: true,//favourites
+      columnsautoresize:true,
+      columnsreorder:true,//favourites,
+      disabled:false,
+      editable:true,//favourites
+      editmode:"dblclick",//favourites
+      filterable: true,//favourites
+      groupable: false,
+      groups:[],
+      horizontalscrollbarstep: 15,
+      horizontalscrollbarlargestep:50,
+      initrowdetails:null,
+      keyboardnavigation:true,
+      pagesize:10,//favourites
+      pagesizeoptions: ["5", "10", "20"],
+      pagermode:"default",
+      pagerbuttonscount:5,
+      pageable: true,//favourites
+      rowdetails:false,
+      rowdetailstemplate:null,
+      ready: null,
+      rendered:null,
+      renderstatusbar:null,
+      rendertoolbar:null,
+      rendergridrows: function()//favourites
+      {
+          return dataadapter.records;
+      },
+      sortable: true,//favourites
+      selectedrowindex:-1,
+      selectedrowindexes:[],
+      source: dataadapter,//favourites
+      sorttogglestates:2,
+      updatedelay:0,
+      virtualmode: true,//favourites
+      verticalscrollbarstep:5,
+      verticalscrollbarlargestep:400
+  },
+  pagesize:100,
+  urlDataGrid:base_url()+"index.php/engine/Widget_jqxgrid/grid_data/level/",
+  urlUpdateGrid:base_url()+"index.php/engine/Widget_jqxgrid/update/level/",
+  urlCreateGrid:base_url()+"index.php/engine/Widget_jqxgrid/store/level/",
+  urlDeleteGrid:base_url()+"index.php/engine/Widget_jqxgrid/destroy/level/"
+}

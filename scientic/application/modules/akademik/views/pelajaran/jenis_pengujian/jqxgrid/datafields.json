@@ -1,0 +1,10 @@
+{
+	"table":"jenisujian",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "jenisujian"},
+		{ "name": "idpelajaran"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

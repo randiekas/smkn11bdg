@@ -1,0 +1,3 @@
+$('#frameUIDesigner').load(function(){
+  loadUICodePreview();
+});

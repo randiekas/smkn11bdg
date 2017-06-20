@@ -1,0 +1,33 @@
+{
+  config:{
+      theme:themeWidget,
+       width : "100%",
+       height : $( window ).height()-60,
+       source: dataadapter,
+       autoheight: false,
+       pageable: true,
+       virtualmode: false,
+       showfilterrow: true,
+       filterable: true,
+       sortable: true,
+       columnsResize: true,
+       altrows: true,
+       showeverpresentrow: false,
+       everpresentrowposition: "top",
+       everpresentrowactions: "add reset",
+       editable:true,
+       editmode:"dblclick",
+       groupable: true,
+	   groups:['departemen','idkategori'],
+       everpresentrowposition:'top',
+       pagesizeoptions: <?=$this->load->view("penerimaan/jenis_penerimaan/jqxgrid/jqxgrid-function/pagesizeoptions.js",array(),TRUE)?>,
+       rendergridrows: <?=$this->load->view("penerimaan/jenis_penerimaan/jqxgrid/jqxgrid-function/rendergridrows.js",array(),TRUE)?>,
+       columns: <?=$this->load->view("penerimaan/jenis_penerimaan/jqxgrid/jqxgrid-function/columns.js",array(),TRUE)?>
+  },
+  pagesize:500,
+  urlDataGrid:current_url()+"/grid_data/",
+  urlUpdateGrid:current_url()+"/update/",
+  urlCreateGrid:current_url()+"/store/",
+  urlDeleteGrid:current_url()+"/destroy/",
+  element:"#jqxGrid"
+}

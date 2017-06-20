@@ -1,0 +1,13 @@
+{
+	"table":"user",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "username"},
+		{ "name": "password"},
+		{ "name": "entity_id"},
+		{ "name": "level"},
+		{ "name": "last_login"},
+		{ "name": "last_login_ip"}
+	],
+	"ID":"id"
+}

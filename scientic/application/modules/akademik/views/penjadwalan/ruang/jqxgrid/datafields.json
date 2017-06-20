@@ -1,0 +1,14 @@
+{
+	"table":"ruang",
+	"fields":[
+		{ "name": "id"},
+{ "name": "kd_ruang"},
+{ "name": "nama_ruang"},
+{ "name": "luas"},
+{ "name": "kapasitas"},
+{ "name": "tgl_buat"},
+{ "name": "tgl_ubah"},
+{ "name": "user"}
+	],
+	"ID":"id"
+}

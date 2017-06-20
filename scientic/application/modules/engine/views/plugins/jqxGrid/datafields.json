@@ -1,0 +1,9 @@
+{
+	"table":"academic_religion",
+	"fields":[
+		{ "name": "ID"},
+		{ "name": "ReligionID"},
+		{ "name": "Name"}
+	],
+	"ID":"ID"
+}

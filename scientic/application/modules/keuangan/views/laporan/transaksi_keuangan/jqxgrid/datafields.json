@@ -1,0 +1,18 @@
+{
+	"table":"transaksilog",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "sumber"},
+		{ "name": "idsumber"},
+		{ "name": "tanggal"},
+		{ "name": "transaksi"},
+		{ "name": "petugas"},
+		{ "name": "nokas"},
+		{ "name": "idtahunbuku"},
+		{ "name": "keterangan"},
+		{ "name": "debet"},
+		{ "name": "kredit"},
+		{ "name": "departemen"}
+	],
+	"ID":"replid"
+}

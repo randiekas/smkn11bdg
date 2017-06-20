@@ -1,0 +1,12 @@
+{
+	"table":"guru",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "nip"},
+		{ "name": "idpelajaran"},
+		{ "name": "statusguru"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

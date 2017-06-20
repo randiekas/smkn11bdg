@@ -1,0 +1,11 @@
+{
+	"table":"angkatan",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "angkatan"},
+		{ "name": "departemen"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

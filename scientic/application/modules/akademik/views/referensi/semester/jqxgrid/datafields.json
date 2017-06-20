@@ -1,0 +1,11 @@
+{
+	"table":"semester",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "semester"},
+		{ "name": "departemen"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

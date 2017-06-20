@@ -1,0 +1,61 @@
+{
+  column:function(){
+    var column = [
+      { text: "ID", datafield: "id", columntype:"textbox",width:"10"},
+      { text: "Username", datafield: "username", columntype:"textbox",width:"150"},
+      { text: "Password", datafield: "password", columntype:"textbox",width:"200"},
+      { text: "Last Login", datafield: "last_login", columntype:"textbox",width:"150"},
+      { text: "IP", datafield: "last_login_ip", columntype:"textbox",width:"150"}
+      ];
+      return column;
+  },
+  config:function(){
+    var config = {
+      width : "99%",
+      height : "99%",
+      source: dataadapter,
+      autoheight: false,
+      pageable: true,
+      virtualmode: true,
+      showfilterrow: false,
+      filterable: true,
+      sortable: true,
+      columnsResize: true,
+      altrows: true,
+      showeverpresentrow: true,
+      everpresentrowposition: "top",
+      everpresentrowactions: "add reset delete",
+      'editable':true,
+      selectionmode: 'multiplecellsadvanced',
+      pagesizeoptions: ["50", "100", "200","400"],
+      //selectionmode: "multiplecellsadvanced",
+       rendergridrows: function()
+       {
+           return dataadapter.records;
+       },
+       ready: function () {
+                 /*$("#jqxgrid").jqxGrid("sortby", "id", "asc");*/
+                 },
+        columns: this.column()
+    };
+    return config;
+  },
+  pagesize:function(){
+    return 100;
+  },
+  module_url:function(){
+    return base_url()+'index.php/engine/Widget_jqxgrid';
+  },
+  urlDataGrid:function(){
+    return this.module_url()+"/grid_data/user/";
+  },
+  urlUpdateGrid:function(){
+    return this.module_url()+"/update/user/";
+  },
+  urlCreateGrid:function(){
+    return this.module_url()+"/store/user/";
+  },
+  urlDeleteGrid:function(){
+    return this.module_url()+"/destroy/user/";
+  }
+}

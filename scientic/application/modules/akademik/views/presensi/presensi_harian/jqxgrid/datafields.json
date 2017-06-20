@@ -1,0 +1,15 @@
+{
+	"table":"phsiswa",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "idpresensi"},
+		{ "name": "nis"},
+		{ "name": "hadir"},
+		{ "name": "ijin"},
+		{ "name": "sakit"},
+		{ "name": "cuti"},
+		{ "name": "alpa"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

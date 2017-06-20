@@ -1,0 +1,30 @@
+{
+	"table":"dosen",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "sandi_dosen"},
+		{ "name": "nip"},
+		{ "name": "nidn"},
+		{ "name": "nik"},
+		{ "name": "nama_dosen"},
+		{ "name": "tmplahir"},
+		{ "name": "tgllahir"},
+		{ "name": "agama"},
+		{ "name": "kewarganegaraan"},
+		{ "name": "jk"},
+		{ "name": "goldarah"},
+		{ "name": "alamat_tinggal"},
+		{ "name": "provinsi"},
+		{ "name": "kota"},
+		{ "name": "kodepos"},
+		{ "name": "telepon"},
+		{ "name": "fax"},
+		{ "name": "email"},
+		{ "name": "status_aktif"},
+		{ "name": "status_dosen"},
+		{ "name": "ps_induk"},
+		{ "name": "smt_m_aktif"},
+		{ "name": "smt_mt_aktif"}
+	],
+	"ID":"id"
+}

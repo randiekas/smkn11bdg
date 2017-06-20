@@ -1,0 +1,11 @@
+{
+	"table":"presensipegawai",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "status"},
+		{ "name": "jammasuk"},
+		{ "name": "jampulang"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

@@ -1,0 +1,14 @@
+{
+	"table":"aturannhb",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "nipguru"},
+		{ "name": "idtingkat"},
+		{ "name": "idpelajaran"},
+		{ "name": "dasarpenilaian"},
+		{ "name": "idjenisujian"},
+		{ "name": "bobot"},
+		{ "name": "aktif"}
+	],
+	"ID":"replid"
+}

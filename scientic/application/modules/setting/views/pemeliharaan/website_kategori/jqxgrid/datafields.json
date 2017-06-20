@@ -1,0 +1,9 @@
+{
+	"table":"website_category_news",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "category"},
+		{ "name": "icon"}
+	],
+	"ID":"id"
+}

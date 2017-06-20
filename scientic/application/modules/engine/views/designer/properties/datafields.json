@@ -1,0 +1,10 @@
+{
+	"table":"level",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "sort_number"},
+		{ "name": "code"},
+		{ "name": "name"}
+	],
+	"ID":"id"
+}

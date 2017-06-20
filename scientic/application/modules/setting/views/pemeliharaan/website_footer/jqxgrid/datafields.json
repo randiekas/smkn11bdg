@@ -1,0 +1,10 @@
+{
+	"table":"website_menu",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "nama_module"},
+		{ "name": "link"},
+		{ "name": "aktif"}
+	],
+	"ID":"id"
+}

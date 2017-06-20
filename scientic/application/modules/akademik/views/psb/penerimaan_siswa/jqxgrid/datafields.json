@@ -1,0 +1,12 @@
+{
+	"table":"prosespenerimaansiswa",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "proses"},
+		{ "name": "kodeawalan"},
+		{ "name": "departemen"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

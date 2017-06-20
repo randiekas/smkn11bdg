@@ -1,0 +1,13 @@
+{
+	"table":"pelajaran",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "kode"},
+		{ "name": "nama"},
+		{ "name": "departemen"},
+		{ "name": "sifat"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

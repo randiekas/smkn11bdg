@@ -1,0 +1,17 @@
+{
+	"table":"ujian",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "idpelajaran"},
+		{ "name": "idkelas"},
+		{ "name": "idsemester"},
+		{ "name": "idjenis"},
+		{ "name": "deskripsi"},
+		{ "name": "tanggal"},
+		{ "name": "tglkirimSMS"},
+		{ "name": "idaturan"},
+		{ "name": "idrpp"},
+		{ "name": "kode"}
+	],
+	"ID":"replid"
+}

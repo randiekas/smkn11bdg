@@ -1,0 +1,17 @@
+[
+  {
+      icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+      label: 'Signin.php',
+      value:'signin.php'
+  },
+  {
+      icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+      label: 'Dashboard.php',
+      value:'dashboard.php'
+  },
+  {
+      icon: '<?=base_url("assets/jqwidgets/")?>/images/nav1.png',
+      label: 'Content.php',
+      value:'content.php'
+  }
+]

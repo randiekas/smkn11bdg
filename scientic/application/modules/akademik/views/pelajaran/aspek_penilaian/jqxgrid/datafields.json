@@ -1,0 +1,9 @@
+{
+	"table":"dasarpenilaian",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "dasarpenilaian"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

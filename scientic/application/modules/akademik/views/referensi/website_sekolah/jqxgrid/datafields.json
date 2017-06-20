@@ -1,0 +1,11 @@
+{
+	"table":"jurusan",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "departemen"},
+		{ "name": "kode"},
+		{ "name": "jurusan"},
+		{ "name": "aktif"}
+	],
+	"ID":"replid"
+}

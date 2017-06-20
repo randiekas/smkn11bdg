@@ -1,0 +1,16 @@
+{
+	"table":"module",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "parent_id"},
+		{ "name": "sort_number"},
+		{ "name": "name"},
+		{ "name": "url"},
+		{ "name": "slug"},
+		{ "name": "folder"},
+		{ "name": "icon"},
+		{ "name": "na"},
+		{ "name": "module_type"}
+	],
+	"ID":"id"
+}

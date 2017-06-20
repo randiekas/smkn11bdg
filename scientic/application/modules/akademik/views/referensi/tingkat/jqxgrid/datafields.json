@@ -1,0 +1,12 @@
+{
+	"table":"tingkat",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "tingkat"},
+		{ "name": "departemen"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"},
+		{ "name": "urutan"}
+	],
+	"ID":"replid"
+}

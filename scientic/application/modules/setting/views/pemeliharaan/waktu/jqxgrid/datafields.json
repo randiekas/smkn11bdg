@@ -1,0 +1,13 @@
+{
+	"table":"waktu",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "kd_program"},
+		{ "name": "kd_hari"},
+		{ "name": "sesi"},
+		{ "name": "sks"},
+		{ "name": "jam_mulai"},
+		{ "name": "jam_selesai"}
+	],
+	"ID":"id"
+}

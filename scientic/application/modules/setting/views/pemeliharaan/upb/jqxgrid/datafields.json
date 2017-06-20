@@ -1,0 +1,9 @@
+{
+	"table":"upb",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "kd_upb"},
+		{ "name": "nama_upb"}
+	],
+	"ID":"id"
+}

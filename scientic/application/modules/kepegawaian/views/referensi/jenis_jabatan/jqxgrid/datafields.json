@@ -1,0 +1,12 @@
+{
+	"table":"jenisjabatan",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "jenis"},
+		{ "name": "keterangan"},
+		{ "name": "urutan"},
+		{ "name": "jabatan"},
+		{ "name": "isdefault"}
+	],
+	"ID":"replid"
+}

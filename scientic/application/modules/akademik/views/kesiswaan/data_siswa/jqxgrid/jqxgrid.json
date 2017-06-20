@@ -1,0 +1,88 @@
+{
+  config:{
+      theme:themeWidget,
+       width : "99.80%",
+       height : "100%",
+       source: dataadapter,
+       autoheight: false,
+       pageable: false,
+       virtualmode: false,
+       showfilterrow: false,
+       filterable: true,
+       sortable: true,
+       columnsResize: true,
+       altrows: true,
+       showeverpresentrow: false,
+       everpresentrowposition: "top",
+       everpresentrowactions: "add reset",
+       editable:true,
+       editmode:"dblclick",
+       groupable: false,
+       everpresentrowposition:'top',
+	   selectionmode:'multiplecellsadvanced',
+	   showtoolbar:true,
+		rendertoolbar: function (toolbar) {
+                    var me = this;
+                    var container = $("<div style='margin: 5px;'></div>");
+                    toolbar.append(container);
+                    container.append('<input id="resetImport" type="button" value="Reset" />');
+                    container.append('<input style="margin-left: 5px;" id="addImport" type="button" value="Proses Import" />');
+						
+						$("#resetImport").jqxButton();
+						$("#addImport").jqxButton();
+						// create new row.
+						
+						$("#resetImport").on('click', function () {
+								jqxGridSiswa.jqxGrid('showloadelement');
+								$.ajax({
+									 dataType: 'json',
+									 url: '<?=current_url()?>/reset_siswa_import',
+									 type:'post',
+									 success: function (data, status, xhr) {
+											elementJqxGridReligion.jqxGrid('updatebounddata', 'sort');
+											jqxGridSiswa.jqxGrid('hideloadelement');
+									},
+									 error: function (data,status) {
+										 Notification.open(Notification.textFailedDelete(),"error");
+										 jqxGridSiswa.jqxGrid('hideloadloadelement');
+									 }
+								 });
+						});
+						$("#addImport").on('click', function () {
+								jqxGridSiswa.jqxGrid('showloadelement');
+								 //batas
+								 confirm = function(){
+								$.ajax({
+									 dataType: 'json',
+									 url: '<?=current_url()?>/store_import',
+									 data:{idkelas:$('#siswa_idkelas').val()},
+									 type:'post',
+									 success: function (data, status, xhr) {
+											Notification.open("Import data berhasil !","success");
+											elementJqxGridReligion.jqxGrid('updatebounddata');
+											jqxGridSiswa.jqxGrid('updatebounddata');
+											jqxGridSiswa.jqxGrid('hideloadelement');
+									},
+									 error: function (data,status) {
+										 Notification.open(Notification.textFailedDelete(),"error");
+										 jqxGridSiswa.jqxGrid('hideloadelement');
+									 }
+								 });
+								}
+								messageContent = "Apakah anda yakin, akan mengimport data ke kelas "+$("#siswa_idkelas option[value="+$("#siswa_idkelas").val()+"]").text();
+								alert.confirm("Import Data ?",messageContent,confirm,function(){});
+						});
+						
+						 
+		},
+       pagesizeoptions: <?=$this->load->view("kesiswaan/data_siswa/jqxgrid/jqxgrid-function/pagesizeoptions.js",array(),TRUE)?>,
+       rendergridrows: <?=$this->load->view("kesiswaan/data_siswa/jqxgrid/jqxgrid-function/rendergridrows.js",array(),TRUE)?>,
+       columns: <?=$this->load->view("kesiswaan/data_siswa/jqxgrid/jqxgrid-function/columns.js",array(),TRUE)?>
+  },
+  pagesize:500,
+  urlDataGrid:current_url()+"/grid_data_import/",
+  urlUpdateGrid:current_url()+"/update_import/",
+  urlCreateGrid:current_url()+"/store_import/",
+  urlDeleteGrid:current_url()+"/destroy_import/",
+  element:"#jqxGrid"
+}

@@ -1,0 +1,35 @@
+{
+  config:{
+      theme:themeWidget,
+       width : "100%",
+       height : '100%',
+       source: dataadapter,
+       autoheight: false,
+       pageable: false,
+       virtualmode: false,
+       showfilterrow: false,
+       filterable: true,
+       sortable: true,
+       columnsResize: true,
+       altrows: true,
+       showeverpresentrow: false,
+       everpresentrowposition: "top",
+       everpresentrowactions: "add reset",
+       editable:false,
+       editmode:"dblclick",
+       groupable: true,
+       enablebrowserselection: false,
+	   everpresentrowposition:'top',
+	   selectionmode:'multiplecellsextended',
+	   
+       pagesizeoptions: <?=$this->load->view("penjadwalan/laporan_jadwaltabel/jqxgrid/jqxgrid-function/pagesizeoptions.js",array(),TRUE)?>,
+       rendergridrows: <?=$this->load->view("penjadwalan/laporan_jadwaltabel/jqxgrid/jqxgrid-function/rendergridrows.js",array(),TRUE)?>,
+       columns: <?=$this->load->view("penjadwalan/laporan_jadwaltabel/jqxgrid/jqxgrid-function/columns.js",array(),TRUE)?>
+  },
+  pagesize:500,
+  urlDataGrid:current_url()+"/grid_data/",
+  urlUpdateGrid:current_url()+"/update/",
+  urlCreateGrid:current_url()+"/store/",
+  urlDeleteGrid:current_url()+"/destroy/",
+  element:"#jqxGrid"
+}

@@ -1,0 +1,15 @@
+{
+	"table":"sync_user_idisi",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "id_profile"},
+		{ "name": "username"},
+		{ "name": "password"},
+		{ "name": "type"},
+		{ "name": "last_login"},
+		{ "name": "pinortu"},
+		{ "name": "pinpassword"},
+		{ "name": "last_login_ortu"}
+	],
+	"ID":"replid"
+}

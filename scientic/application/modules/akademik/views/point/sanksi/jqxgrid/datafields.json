@@ -1,0 +1,9 @@
+{
+	"table":"point_sanksi",
+	"fields":[
+		{ "name": "replid"},
+        { "name": "point"},
+        { "name": "sanksi"}
+	],
+	"ID":"replid"
+}

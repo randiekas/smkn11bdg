@@ -1,0 +1,14 @@
+{
+	"table":"tahunbuku",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "tahunbuku"},
+		{ "name": "awalan"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"},
+		{ "name": "cacah"},
+		{ "name": "departemen"},
+		{ "name": "tanggalmulai"}
+	],
+	"ID":"replid"
+}

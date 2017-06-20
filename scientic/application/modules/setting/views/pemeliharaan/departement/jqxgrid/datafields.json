@@ -1,0 +1,18 @@
+{
+	"table":"departemen",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "departemen","type":"string"},
+		{ "name": "nipkepsek","type":"string"},
+		{ "name": "urutan","type":"string"},
+		{ "name": "keterangan","type":"string"},
+		{ "name": "aktif","type":"string"},
+		{ "name": "info1"},
+		{ "name": "info2"},
+		{ "name": "info3"},
+		{ "name": "ts"},
+		{ "name": "token"},
+		{ "name": "issync"}
+	],
+	"ID":"replid"
+}

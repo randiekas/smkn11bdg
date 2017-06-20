@@ -1,0 +1,11 @@
+{
+	"table":"rekakun",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "kode"},
+		{ "name": "kategori"},
+		{ "name": "nama"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}

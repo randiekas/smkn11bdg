@@ -1,0 +1,10 @@
+{
+	"table":"satker",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "satker"},
+		{ "name": "nama"},
+		{ "name": "isdefault"}
+	],
+	"ID":"replid"
+}

@@ -1,0 +1,25 @@
+{
+	"table":"v_calonsiswa",
+	"fields":[
+		{ "name": "departemen"},
+		{ "name": "proses"},
+		{ "name": "kelompok"},
+		{ "name": "kapasitas"},
+		{ "name": "nopendaftaran"},
+		{ "name": "nisn"},
+		{ "name": "nama"},
+		{ "name": "sum1"},
+		{ "name": "sum2"},
+		{ "name": "ujian1"},
+		{ "name": "ujian2"},
+		{ "name": "ujian3"},
+		{ "name": "ujian4"},
+		{ "name": "ujian5"},
+		{ "name": "ujian6"},
+		{ "name": "ujian7"},
+		{ "name": "ujian8"},
+		{ "name": "ujian9"},
+		{ "name": "siswa"}
+	],
+	"ID":"replid"
+}

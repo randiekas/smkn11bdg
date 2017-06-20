@@ -1,0 +1,14 @@
+{
+	"table":"aturangrading",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "nipguru"},
+		{ "name": "idtingkat"},
+		{ "name": "idpelajaran"},
+		{ "name": "dasarpenilaian"},
+		{ "name": "nmin"},
+		{ "name": "nmax"},
+		{ "name": "grade"}
+	],
+	"ID":"replid"
+}

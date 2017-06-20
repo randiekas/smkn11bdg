@@ -1,0 +1,12 @@
+{
+	"table":"mutasisiswa",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "nis"},
+		{ "name": "jenismutasi"},
+		{ "name": "tglmutasi"},
+		{ "name": "keterangan"},
+		{ "name": "departemen"}
+	],
+	"ID":"replid"
+}

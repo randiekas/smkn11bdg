@@ -1,0 +1,29 @@
+{
+  config:{
+       width : "99%",
+       height : "99%",
+       source: dataadapter,
+       autoheight: false,
+       pageable: true,
+       virtualmode: true,
+       showfilterrow: false,
+       filterable: true,
+       sortable: true,
+       columnsResize: true,
+       altrows: true,
+       showeverpresentrow: true,
+       everpresentrowposition: "top",
+       everpresentrowactions: "add reset delete",
+       'editable':true,
+       selectionmode: 'multiplecellsadvanced',
+       pagesizeoptions: <?=$this->load->view("engine/designer/level/jqxgrid-function/pagesizeoptions.js",array(),TRUE)?>,
+       //selectionmode: "multiplecellsadvanced",
+       rendergridrows: <?=$this->load->view("engine/designer/level/jqxgrid-function/rendergridrows.js",array(),TRUE)?>,
+       columns: <?=$this->load->view("engine/designer/level/jqxgrid-function/columns.js",array(),TRUE)?>
+  },
+  pagesize:100,
+  urlDataGrid:base_url()+"index.php/engine/Widget_jqxgrid/grid_data/level/",
+  urlUpdateGrid:base_url()+"index.php/engine/Widget_jqxgrid/update/level/",
+  urlCreateGrid:base_url()+"index.php/engine/Widget_jqxgrid/store/level/",
+  urlDeleteGrid:base_url()+"index.php/engine/Widget_jqxgrid/destroy/level/"
+}

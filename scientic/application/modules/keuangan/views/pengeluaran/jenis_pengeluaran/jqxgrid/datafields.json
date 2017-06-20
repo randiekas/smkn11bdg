@@ -1,0 +1,14 @@
+{
+	"table":"datapengeluaran",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "departemen"},
+		{ "name": "nama"},
+		{ "name": "rekdebet"},
+		{ "name": "rekkredit"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"},
+		{ "name": "besar"}
+	],
+	"ID":"replid"
+}

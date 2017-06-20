@@ -1,0 +1,17 @@
+{
+	"table":"datapenerimaan",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "nama"},
+		{ "name": "besar"},
+		{ "name": "idkategori"},
+		{ "name": "rekkas"},
+		{ "name": "rekpendapatan"},
+		{ "name": "rekpiutang"},
+		{ "name": "aktif"},
+		{ "name": "keterangan"},
+		{ "name": "departemen"},
+		{ "name": "info1"}
+	],
+	"ID":"replid"
+}

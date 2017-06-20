@@ -1,0 +1,12 @@
+{
+	"table":"website_news",
+	"fields":[
+		{ "name": "id"},
+		{ "name": "id_category_news"},
+		{ "name": "title"},
+		{ "name": "content"},
+		{ "name": "created"},
+		{ "name": "author"}
+	],
+	"ID":"id"
+}

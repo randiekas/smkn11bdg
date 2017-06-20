@@ -1,0 +1,11 @@
+{
+	"table":"kelompokcalonsiswa",
+	"fields":[
+		{ "name": "replid"},
+		{ "name": "kelompok"},
+		{ "name": "idproses"},
+		{ "name": "kapasitas"},
+		{ "name": "keterangan"}
+	],
+	"ID":"replid"
+}
