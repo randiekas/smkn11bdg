@@ -1,0 +1,73 @@
+<!--Breadcrumb Banner Area Start-->
+                <div class="breadcrumb-banner-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="breadcrumb-text">
+                                    <h1 class="text-center">{{current_page.name}}</h1>
+                                    <div class="breadcrumb-bar">
+                                        <ul class="breadcrumb text-center">
+                                            <li><a href="#/home">Beranda</a></li>
+                                            <li class="">{{current_page.name}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Breadcrumb Banner Area-->
+<!--About Page Area Start-->
+                <div class="about-page-area section-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title-wrapper">
+                                    <div class="section-title">
+                                        <h3>{{current_page.name}}</h3>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- single page !-->
+                            <div class="col-md-12">
+                                <div class="about-text-container">
+                                    <div ng-bind-html="current_page.content"></div>
+                                </div>
+                            </div>
+                            <!-- single page !-->
+                            
+                            <!-- multiple page !-->
+                            <div class="col-md-3 col-sm-6" ng-repeat="news in berita">
+                                <div class="single-event-item">
+                                    <div class="single-event-image">
+                                        <a href="#">
+                                            <img src="{{news.image}}" alt="" style="height:219px;">
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="single-event-text">
+                                        <h4 style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;min-height:53px;"><a href="#">{{news.title}}</a></h4>
+                                        <div class="single-item-comment-view">
+                                           <span><i class="zmdi zmdi-time"></i>{{news.created_format}}</span>
+                                           <span><i class="zmdi zmdi-pin"></i><a href="#/{{news.link}}"><small><b>{{news.name}}</b></small></a></span>
+                                       </div>
+                                       
+                                       
+                                        <a href="#{{news.link}}/detail/{{news.id}}" class="button-default">{{button_readmore}}</a>
+                                    </div>
+                                </div>
+                                <br/>
+                            </div>
+                            <!-- multiple page !-->
+                           
+						<div class="col-md-12 pagination-content number">
+							<ul class="col s4 offset-s5 pagination" ng-bind-html="link"></ul>
+						</div>
+						
+                        </div>
+                    </div>
+                </div>
+                <!--End of About Page Area-->

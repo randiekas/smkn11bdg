@@ -1,0 +1,48 @@
+<!--breadcrumbs start-->
+<div id="breadcrumbs-wrapper">
+    <!-- Search for small screen -->
+    <div class="header-search-wrapper grey hide-on-large-only">
+        <i class="mdi-action-search active"></i>
+        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title">Kritik dan saran</h5>
+                <ol class="breadcrumbs">
+                    <li><a href="#/home">Beranda</a></li>
+                    <li class="active">List Kritik dan saran</li>
+                </ol>
+                
+            </div>
+            <div class="col l12">
+    <table>
+    <thead>
+    <tr>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>Website</th>
+        <th>Pesan</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="row in list_kritik">
+        <td>{{row.nama}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.website}}</td>
+        <td>{{row.pesan}}</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+        </div>
+    </div>
+    
+</div>
+<div class="section">
+    <div class="row">
+        <ul class="col s4 offset-s5 pagination" ng-bind-html="link"></ul>
+    </div>
+</div>
+<!--/ end blog list -->

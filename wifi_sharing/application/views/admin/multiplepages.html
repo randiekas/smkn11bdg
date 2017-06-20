@@ -1,0 +1,70 @@
+<!--breadcrumbs start-->
+<div id="breadcrumbs-wrapper">
+    <!-- Search for small screen -->
+    <div class="header-search-wrapper grey hide-on-large-only">
+        <i class="mdi-action-search active"></i>
+        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title">{{current_page.name}}</h5>
+                <a href="admin_cmz/add_article/{{current_page.id}}" class="btn waves-effect waves-light blue right" ng-if="current_page.type=='multipages'">Tambah Artikel</a>
+                <ol class="breadcrumbs">
+                    <li><a href="#/home">Beranda</a></li>
+                    <li class="active">{{current_page.name}}</li>
+                </ol>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" ng-if="current_page.type=='singlepage'">    
+    <div class="col l12">
+    <form method="post" action="admin_cmz/save_singlepage/">
+        <input type="hidden" name="id" value="{{current_page.id}}">
+        <input type="hidden" name="link" value="{{current_page.link}}">
+        <div class="blog-post-content editable" ng-bind-html="current_page.content"></div>
+        <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Simpan
+              <i class="mdi-content-send right"></i>
+        </button>
+        <br/>
+    </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12 m4 l4" ng-repeat="news in berita">
+        <div id="profile-card" class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <a><img class="activator" check-image ng-src="{{news.image}}" alt="blog-img"></a>
+            </div>
+            <div class="card-content">
+                <a class="btn-floating waves-effect waves-light green accent-4 btn-move-up right"><i class="mdi-social-share"></i></a>
+                <a class="btn-floating waves-effect waves-light light-blue btn-move-up right"><i class="mdi-action-info activator"></i></a>
+                <p class="row">
+                    <span class="left"><a href="#/{{news.link}}"><small><b>{{news.name}}</b></small></a></span>
+                    <span class="right"><small>{{news.created_format}}</small></span>
+                </p>
+                <h4 class="card-title grey-text text-darken-4 truncate"><a  class="grey-text activator text-darken-4">{{news.title}}</a></h4>
+                <p class="truncate"><small>{{news.content}}</small></p>
+
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#{{current_page.link}}/detail/{{news.id}}" class="btn waves-effect waves-light blue">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{news.title}} <i class="mdi-navigation-close right"></i></span>
+                <div ng-bind-html="news.content"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="row">
+        <ul class="col s4 offset-s5 pagination" ng-bind-html="link"></ul>
+    </div>
+</div>
+<!--/ end blog list -->

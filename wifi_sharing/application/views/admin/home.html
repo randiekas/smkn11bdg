@@ -1,0 +1,270 @@
+
+<!--Content HOme-->
+                <div class="container">
+
+                    <!--chart dashboard start-->
+                    <div id="chart-dashboard">
+                        <div class="row">
+                            <div class="col s12 m8 l8">
+                                <div class="card">
+                                    <div class="card-move-up waves-effect waves-block waves-light">
+                                        <div class="move-up cyan darken-1">
+                                            <div>
+                                                <span class="chart-title white-text">Kunjungan Bulan ini</span>
+                                                <div class="chart-revenue cyan darken-2 white-text">
+                                                    <p class="chart-revenue-total">{{total.pengunjung}}</p>
+                                                    <p class="chart-revenue-per"><i class="mdi-navigation-arrow-drop-up"></i> {{total.user}}</p>
+                                                </div>
+                                                <div class="switch chart-revenue-switch right">
+                                                    <label class="cyan-text text-lighten-5">
+                                                      Month
+                                                      <input type="checkbox">
+                                                      <span class="lever"></span> Year
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="trending-line-chart-wrapper">
+                                                <canvas id="trending-line-chart" height="70"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <a class="btn-floating btn-move-up waves-effect waves-light darken-2 right"><i class="mdi-content-add activator"></i></a>
+                                        
+                                        <div class="col s12 m5 l12">
+                                            <div class="trending-bar-chart-wrapper">
+                                                <canvas id="trending-bar-chart" height="90"></canvas>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Kunjungan Tahun ini<i class="mdi-navigation-close right"></i></span>
+                                        <table class="responsive-table">
+                                            <thead>
+                                                <tr>
+                                                    <th data-field="id">ID</th>
+                                                    <th data-field="month">Month</th>
+                                                    <th data-field="item-sold">Item Sold</th>
+                                                    <th data-field="item-price">Item Price</th>
+                                                    <th data-field="total-profit">Total Profit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>January</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>February</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>March</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>April</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>May</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>June</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>July</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>August</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Septmber</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>Octomber</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>November</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>December</td>
+                                                    <td>122</td>
+                                                    <td>100</td>
+                                                    <td>$122,00.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col s12 m4 l4">
+                                <div class="card">
+                                    <div class="card-move-up teal waves-effect waves-block waves-light">
+                                        <div class="move-up">
+                                            <p class="margin white-text">Paling banyak dikunjungi</p>
+                                            <canvas id="trending-radar-chart" height="114"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="card-content  teal darken-2">
+                                        <a class="btn-floating btn-move-up waves-effect waves-light darken-2 right"><i class="mdi-content-add activator"></i></a>
+                                        <div class="line-chart-wrapper">
+                                            <p class="margin white-text">Statistik Pendaftar</p>
+                                            <canvas id="line-chart" height="114"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Revenue by country <i class="mdi-navigation-close right"></i></span>
+                                        <table class="responsive-table">
+                                            <thead>
+                                                <tr>
+                                                    <th data-field="country-name">Country Name</th>
+                                                    <th data-field="item-sold">Item Sold</th>
+                                                    <th data-field="total-profit">Total Profit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>USA</td>
+                                                    <td>65</td>
+                                                    <td>$452.55</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UK</td>
+                                                    <td>76</td>
+                                                    <td>$452.55</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Canada</td>
+                                                    <td>65</td>
+                                                    <td>$452.55</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Brazil</td>
+                                                    <td>76</td>
+                                                    <td>$452.55</td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>India</td>
+                                                    <td>65</td>
+                                                    <td>$452.55</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>France</td>
+                                                    <td>76</td>
+                                                    <td>$452.55</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Austrelia</td>
+                                                    <td>65</td>
+                                                    <td>$452.55</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Russia</td>
+                                                    <td>76</td>
+                                                    <td>$452.55</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--chart dashboard end-->
+
+            </div>
+<!--Content HOme-->
+
+
+<div class="row">
+    <div class="col s12 m12 l12">
+        <h4 class="header">
+        <!--
+        <a class="chip blue white-text btn activator waves-effect waves-light darken-2 blue right" href="#/berita_kewilayahan">
+            <i class="mdi-action-picture-in-picture"></i> Tampilkan Semua Berita
+        </a>
+        !-->
+        TOP 9 Berita yang paling sering dikunjungi
+        </h4>
+    </div>
+</div>
+<!-- start blog list -->
+<div class="row">
+    <div class="col s12 m4 l4" ng-repeat="news in top_news">
+        <div id="profile-card" class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <a><img class="activator" check-image ng-src="{{news.image}}" alt="blog-img"></a>
+            </div>
+            <div class="card-content">
+                <a class="btn-floating waves-effect waves-light green accent-4 btn-move-up right"><i class="mdi-social-share"></i></a>
+                <a class="btn-floating waves-effect waves-light light-blue btn-move-up right"><i class="mdi-action-info activator"></i></a>
+                <p class="row">
+                    <span class="left"><a href="#/{{news.link}}"><small><b>{{news.name}}</b></small></a></span>
+                    <span class="right"><small>{{news.created_format}}</small></span>
+                </p>
+                <h4 class="card-title grey-text text-darken-4 truncate"><a  class="grey-text activator text-darken-4">{{news.title}}</a></h4>
+                <p class="truncate"><small>{{news.content}}</small></p>
+
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#{{news.link}}/detail/{{news.id}}" class="btn waves-effect waves-light blue">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{news.title}} <i class="mdi-navigation-close right"></i></span>
+                <div ng-bind-html="news.content"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/ end blog list -->

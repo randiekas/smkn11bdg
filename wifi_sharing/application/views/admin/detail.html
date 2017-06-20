@@ -1,0 +1,67 @@
+<!--breadcrumbs start-->
+<div id="breadcrumbs-wrapper">
+    <!-- Search for small screen -->
+    <div class="header-search-wrapper grey hide-on-large-only">
+        <i class="mdi-action-search active"></i>
+        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title">{{current_page.name}}</h5>
+                <a href="admin_cmz/delete_article/{{current_page.link}}/{{news.id}}" onclick="if(confirm('Apakah anda yakin ingin menghapus artikel ini ?')){return true;}else{return false}" class="btn waves-effect waves-light red right">Hapus Artikel</a>
+                <ol class="breadcrumbs">
+                    <li><a href="#/home">Beranda</a></li>
+                    <li><a href="#/{{current_page.link}}">{{current_page.name}}</a></li>
+                    <li class="active">{{news.title}}</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="card-widgets">
+    <div class="row">
+        <form method="post" action="admin_cmz/save/">
+        <input type="hidden" name="id" value="{{news.id}}">
+        <div class="col s12 m12 l8">
+            <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs tab-demo-active z-depth-1 cyan" tabs>
+                      <li class="tab col s3"><a class="white-text waves-effect waves-light active" href="#activeone">Bahasa Indonesia</a></li>
+                      <li class="tab col s3"><a class="white-text waves-effect waves-light" href="#sapien">English Language</a></li>
+                    </ul>
+                  </div>
+                  <div class="col s12">
+                    <div id="activeone" class="col s12 card">
+                        <h4 class="card-title grey-text text-darken-4"><input type="text" name="title_indonesia" value="{{news.title_indonesia}}"></h4>
+                        <div class="blog-post-content editable" ng-bind-html="news.content_indonesia"></div>
+                    </div>
+                    <div id="sapien" class="col s12 card">
+                      <h4 class="card-title grey-text text-darken-4"><input type="text" name="title_english" value="{{news.title_english}}"></h4>
+                      <div class="blog-post-content editable" ng-bind-html="news.content_english"></div>
+                    </div>
+                    
+                  </div>
+                </div>
+            <hr/><br/>
+                        <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Simpan
+                              <i class="mdi-content-send right"></i>
+                        </button>
+        </div>
+        
+        </form>
+        <div class="col s12 m12 l4">
+            <div class="card">
+                <form action="" method="POST" enctype="multipart/form-data" class="formChangeImage">
+                    <input type="text" value="{{news.id}}" name="id" class="hide">
+                    <input type="file" name="foto" id="input-file-events" class="dropify-event" data-height="400px" onchange="$('.formChangeImage').submit()" />
+                    <input type="submit" class="hide">
+                </form>
+                <div class="card-content">
+                    <a class="btn waves-effect waves-light blue"><i class="mdi-editor-border-color right"></i> Klik gambar untuk ubah Cover</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

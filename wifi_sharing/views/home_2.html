@@ -1,0 +1,155 @@
+<!--Slider Area Start-->
+                <div class="slider-area slider-two">
+                    <div class="preview-2">
+                        <div id="nivoslider" class="slides">	
+                            <img src="template/img/slider/3b.jpg" alt="" title="#slider-1-caption1"/>
+                            <img src="template/img/slider/wifi_edu1.jpg" alt="" title="#slider-1-caption2"/>
+							<img src="template/img/slider/dua.png" alt="" title="#slider-1-caption2"/>
+                        </div> 
+                        <div id="slider-1-caption1" class="nivo-html-caption nivo-caption">
+                            <div class="banner-content slider-1">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="text-content-wrapper">
+                                                <div class="text-content">
+                                                    <h1 class="title1">WIFI EDUKASI<br>
+                                                    SMKN 11 BANDUNG</h1>
+                                                    <p class="sub-title hidden-sm hidden-xs"> Wifi edukasi SMKN 11 Bandung dikembangkan agar seluruh warga SMKN 11 Bandung dan masyarakat sekitar Kelurahan  Sukaraja dan Kecamatan Cicendo mendapatkan informasi yang dapat menambah pengetahuan  dalam mendukung kegiatan pembelajaran di sekolah maupun ketrampilan – ketrampilan yang dapat menginspirasi agar tumbuhkan jiwa kewirausahaan sehingga muncul produk – produk hasil karya siswa maupun masyarkat yang dapat juga dipasarkan secara on line .</p>
+                                                    <div class="banner-readmore">
+                                                        <a class="button-default bg-blue" href="#">{{button_readmore}}</a>	                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	
+                        <div id="slider-1-caption2" class="nivo-html-caption nivo-caption">
+                            <div class="banner-content slider-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="text-content-wrapper">
+                                                <div class="text-content slide-2">
+                                                    <h1 class="title1">Education Needs<br>
+                                                    Complete Solution</h1>
+                                                    <p class="sub-title hidden-sm hidden-xs"> There are many variations of passages of Lorem Ipsum available, but the majority have<br>
+                                                    suffered alteration in some form, by injected humour, or randomised words which<br>
+                                                    don't look even slightly believable.</p>
+                                                    <div class="banner-readmore">
+                                                        <a class="button-default bg-blue" href="#">{{button_readmore}}</a>	                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	 
+                    </div>
+                </div>
+                <!--End of Slider Area-->
+<!--Event Area Start-->
+                <div class="event-area section-padding bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title-wrapper">
+                                    <div class="section-title">
+                                        <h3>{{berita_11}}</h3>
+                                        <p><a href="#/berita_sekolah">{{tampilkan_semua}}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6" ng-repeat="news in top_news">
+                                <div class="single-event-item">
+                                    <div class="single-event-image">
+                                        <a href="#">
+                                            <img src="{{news.image}}" alt="" style="height:219px;">
+                                            <span><span>15</span>Jun</span>
+                                        </a>
+                                    </div>
+                                    <div class="single-event-text">
+                                        <h3 style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;min-height:53px"><a href="#">{{news.title}}</a></h3>
+                                        <div class="single-item-comment-view">
+                                           <span><i class="zmdi zmdi-time"></i>{{news.created_format}}</span>
+                                           <span><i class="zmdi zmdi-pin"></i><a href="#/{{news.link}}"><small><b>{{news.name}}</b></small></a></span>
+                                       </div>
+                                       
+                                       
+                                        <a href="#{{news.link}}/detail/{{news.id}}" class="button-default">{{button_readmore}}</a>
+                                    </div>
+                                </div>
+                                <br/>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title-wrapper">
+                                    <div class="section-title">
+                                        {{berita_kewilayahan}}
+                                        <p><a href="#/berita_sekolah">{{tampilkan_semua}}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6" ng-repeat="news in top_news_wilayah">
+                                <div class="single-event-item">
+                                    <div class="single-event-image">
+                                        <a href="#">
+                                            <img src="{{news.image}}" alt="" style="height:219px;">
+                                            <span><span>15</span>Jun</span>
+                                        </a>
+                                    </div>
+                                    <div class="single-event-text">
+                                        <h3 style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;min-height:53px"><a href="#">{{news.title}}</a></h3>
+                                        <div class="single-item-comment-view">
+                                           <span><i class="zmdi zmdi-time"></i>{{news.created_format}}</span>
+                                           <span><i class="zmdi zmdi-pin"></i><a href="#/{{news.link}}"><small><b>{{news.name}}</b></small></a></span>
+                                       </div>
+                                       
+                                       
+                                        <a href="#{{news.link}}/detail/{{news.id}}" class="button-default">{{button_readmore}}</a>
+                                    </div>
+                                </div>
+                                <br/>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--End of Event Area-->
+
+
+
+<script type="text/javascript">
+    (function ($) {
+ "use strict";
+    
+    //---------------------------------------------
+    //Nivo slider
+    //---------------------------------------------
+        $('#nivoslider').nivoSlider({
+            effect: 'random',
+            slices: 15,
+            boxCols: 10,
+            boxRows: 10,
+            animSpeed: 500,
+            pauseTime: 5000,
+            startSlide: 0,
+            directionNav: true,
+            controlNavThumbs: false,
+            pauseOnHover: false,
+            manualAdvance: false
+        });
+})(jQuery); 
+</script>>

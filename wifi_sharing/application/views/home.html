@@ -1,0 +1,92 @@
+<div class="container">
+<!--card widgets start-->
+<div class="row">
+    <div class="col s12 m12 l12">
+        <h4 class="header">
+                    <a class="chip blue white-text btn activator waves-effect waves-light darken-2 blue right" href="#/berita_sekolah">
+                        <i class="mdi-action-picture-in-picture"></i> {{tampilkan_semua}}
+                    </a>
+                    {{berita_11}}
+                </h4>
+    </div>
+</div>
+<!-- start blog list -->
+<div class="row">
+    <div class="col s12 m3 l3" ng-repeat="news in top_news">
+        <div id="profile-card" class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <a><img class="activator" check-image ng-src="{{news.image}}" alt="blog-img"></a>
+            </div>
+            <div class="card-content">
+                <a class="btn-floating waves-effect waves-light green accent-4 btn-move-up right"><i class="mdi-social-share"></i></a>
+                <a class="btn-floating waves-effect waves-light light-blue btn-move-up right"><i class="mdi-action-info activator"></i></a>
+                <p class="row">
+                    <span class="left"><a href="#/{{news.link}}"><small><b>{{news.name}}</b></small></a></span>
+                    <span class="right"><small>{{news.created_format}}</small></span>
+                </p>
+                <p class="collections-title truncate"><a  class="grey-text activator text-darken-4">{{news.title}}</a></p>
+
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#{{news.link}}/detail/{{news.id}}" class="btn waves-effect waves-light blue">{{button_readmore}}</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{news.title}} <i class="mdi-navigation-close right"></i></span>
+                <div ng-bind-html="news.content"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/ end blog list -->
+
+<div class="row">
+    <div class="col s12 m12 l12">
+        <h4 class="header">
+                    <a class="chip blue white-text btn activator waves-effect waves-light darken-2 blue right" href="#/berita_kewilayahan">
+                        <i class="mdi-action-picture-in-picture"></i> {{tampilkan_semua}}
+                    </a>
+                    {{berita_kewilayahan}}
+                </h4>
+    </div>
+</div>
+<!-- start blog list -->
+<div class="row">
+    <div class="col s12 m3 l3" ng-repeat="news in top_news_wilayah">
+        <div id="profile-card" class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <a><img class="activator" check-image ng-src="{{news.image}}" alt="blog-img"></a>
+            </div>
+            <div class="card-content">
+                <a class="btn-floating waves-effect waves-light green accent-4 btn-move-up right"><i class="mdi-social-share"></i></a>
+                <a class="btn-floating waves-effect waves-light light-blue btn-move-up right"><i class="mdi-action-info activator"></i></a>
+                <p class="row">
+                    <span class="left"><a href="#/{{news.link}}"><small><b>{{news.name}}</b></small></a></span>
+                    <span class="right"><small>{{news.created_format}}</small></span>
+                </p>
+                <p class="collections-title truncate"><a  class="grey-text activator text-darken-4">{{news.title}}</a></p>
+
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#{{news.link}}/detail/{{news.id}}" class="btn waves-effect waves-light blue">{{button_readmore}}</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{news.title}} <i class="mdi-navigation-close right"></i></span>
+                <div ng-bind-html="news.content"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/ end blog list -->
+
+</div>
+<!--end container-->
